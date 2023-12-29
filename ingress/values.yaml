@@ -1,0 +1,12 @@
+---
+controller:
+  service:
+    type: NodePort
+    ports:
+      https: 443
+      http: 80
+    nodePorts:
+      https: 30443
+      http: 30080    
+  extraArgs:
+    enable-ssl-passthrough: ""
